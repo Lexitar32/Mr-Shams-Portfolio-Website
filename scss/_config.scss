@@ -1,5 +1,6 @@
 // Link to font family
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
 
 // How to declare these fonts
 // font-family: 'Akaya Telivigala', cursive;
@@ -7,6 +8,7 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Truculenta', sans-serif;
 // font-family: 'Yanone Kaffeesatz', sans-serif;
+// font-family: 'Laila', sans-serif;
 
 // Color and Font Variables Declaration
 
@@ -28,5 +30,9 @@
 }
 
 .nav-item a {
-    padding: 0 15px;
+    padding: 15px;
+    margin: 0 20px;
+    font-family: 'Laila', sans-serif;
+    color: black;
+    font-weight: bold;
 }
