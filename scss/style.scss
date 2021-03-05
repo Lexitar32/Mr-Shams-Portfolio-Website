@@ -5,3 +5,25 @@
 @import './contact';
 
 // Landing Section Styling
+#landing-section {
+    padding: 120px 0;
+    text-align: center;
+    background: url(../images/landing.jpg) no-repeat center center/cover;
+    opacity: 0.8;
+    color: white;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center;
+
+    img {
+        max-width: 150px;
+        border-radius: 50%;
+    }
+
+    p {
+        font-family: 'Laila', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 8px;
+    }
+}

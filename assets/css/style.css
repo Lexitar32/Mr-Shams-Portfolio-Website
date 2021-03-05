@@ -23,4 +23,24 @@
   color: black;
   font-weight: bold;
 }
+
+#landing-section {
+  padding: 120px 0;
+  text-align: center;
+  background: url(../images/landing.jpg) no-repeat center center/cover;
+  opacity: 0.8;
+  color: white;
+}
+
+#landing-section img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+#landing-section p {
+  font-family: 'Laila', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 8px;
+}
 /*# sourceMappingURL=style.css.map */
