@@ -7,6 +7,12 @@
           box-sizing: border-box;
 }
 
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .navbar .navbar-brand {
   font-family: 'Akaya Telivigala', cursive;
 }
@@ -29,10 +35,13 @@
   text-align: center;
   background: url(../images/landing2.jpg) no-repeat center center/cover;
   color: white;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
 }
 
 #landing-section img {
-  max-width: 150px;
+  max-width: 200px;
   border-radius: 50%;
 }
 

@@ -20,6 +20,10 @@
 }
 
 // Navbar Styling
+header {
+    position: sticky;
+    top: 0;
+}
 .navbar .navbar-brand {
     font-family: 'Akaya Telivigala', cursive;
     

@@ -10,12 +10,12 @@
     text-align: center;
     background: url(../images/landing2.jpg) no-repeat center center/cover;
     color: white;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
 
     img {
-        max-width: 150px;
+        max-width: 200px;
         border-radius: 50%;
     }
 
