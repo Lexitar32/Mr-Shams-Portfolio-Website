@@ -16,3 +16,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+// Navbar Styling
+.navbar .navbar-brand {
+    font-family: 'Akaya Telivigala', cursive;
+    
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+.nav-item a {
+    padding: 0 15px;
+}
