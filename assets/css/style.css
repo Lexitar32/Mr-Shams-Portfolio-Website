@@ -11,6 +11,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .navbar .navbar-brand {
@@ -34,7 +35,9 @@ header {
   padding: 120px 0;
   text-align: center;
   background: url(../images/shams1.jpg) no-repeat center center/cover;
+  opacity: 0.9;
   color: black;
+  font-family: 'Laila', sans-serif;
   background-attachment: fixed;
   background-position: center;
   height: 100%;
@@ -43,12 +46,24 @@ header {
 #landing-section img {
   max-width: 200px;
   border-radius: 50%;
+  opacity: 1;
 }
 
 #landing-section p {
-  font-family: 'Laila', sans-serif;
   font-size: 18px;
-  font-weight: bold;
   padding-top: 8px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media (max-width: 425px) {
+  #landing-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+  #landing-section p {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
