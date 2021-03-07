@@ -1,0 +1,27 @@
+#service-section {
+    .services {
+        font-weight: bold;
+    }
+
+    .service-section-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 15px;
+
+        .box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin: 7px;
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+                font-weight: bold;
+                color: #007bff!important;
+            }
+        }
+    }
+}

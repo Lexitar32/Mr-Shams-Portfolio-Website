@@ -1,8 +1,10 @@
 @import './config';
 @import './about';
+@import './services';
 @import './projects';
 @import './blog';
 @import './contact';
+@import './responsiveness';
 
 // Landing Section Styling
 #landing-section {
@@ -31,72 +33,5 @@
         padding-top: 8px;
         font-weight: bold;
         opacity: 1;
-    }
-}
-
-// About Me and Skills Section
-#about-me-section {
-    .about-me-grid {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        border: 1px solid #ccc;
-        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-        margin: 30px auto;
-        padding: 30px;
-        background: #fff;
-    }
-
-    h2 {
-        font-weight: bold;
-    }
-
-    .skill-image-sec {
-        img {
-            border-radius: 5px;
-        }
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-
-        ul {
-            margin-right: 30px;
-        }
-
-        li {
-            list-style-type: none;
-            padding-bottom: 10px;
-        }
-    }
-}
-
-
-// Responsiveness
-@media(max-width: 768px) {
-    #about-me-section {
-        margin: auto;
-        max-width: 90%;
-        .about-me-grid {
-            grid-template-columns: repeat(1, 4fr);
-        }
-
-        img {
-            display: none;
-        }
-    }
-}
-
-@media(max-width: 425px) {
-    #landing-section {
-        h2 {
-            font-size: 22px;
-            font-weight: bold;
-            padding-top: 7px;
-        }
-
-        p {
-            font-size: 15px;
-        }
     }
 }
