@@ -53,3 +53,13 @@
         }
     }
 }
+
+
+// Responsiveness for Contact Me Section
+@media(max-width: 768px) {
+    #contact-me-section {
+        .contact-me-grid {
+            grid-template-columns: 2fr;
+        }
+    }
+}
