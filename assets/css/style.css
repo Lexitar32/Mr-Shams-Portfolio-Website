@@ -71,6 +71,8 @@ header {
   -ms-grid-columns: 2fr 2fr;
       grid-template-columns: 2fr 2fr;
   border: 1px solid #ccc;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
   margin: 30px auto;
   padding: 30px;
   background: #fff;
