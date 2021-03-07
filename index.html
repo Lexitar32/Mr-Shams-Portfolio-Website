@@ -40,16 +40,16 @@
                   <a href="#about-me-section" class="nav-link text-primary">About Me</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#blog" class="nav-link text-primary">Blog</a>
+                  <a href="#service-section" class="nav-link text-primary">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#portfolio" class="nav-link text-primary">Portfolio</a>
+                  <a href="#blog-section" class="nav-link text-primary">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#events" class="nav-link text-primary">Events</a>
+                  <a href="#event-section" class="nav-link text-primary">Events</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#contact" class="nav-link text-primary">Contact Us</a>
+                  <a href="#contact-me-section" class="nav-link text-primary">Contact Me</a>
                 </li>
               </ul>
       
@@ -210,6 +210,17 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <script>
+        window.sr = ScrollReveal({
+          duration: 2000
+        });
+        sr.reveal('#about-me-section');
+        sr.reveal('#service-section');
+        sr.reveal('#contact-me-section');
+      </script>
+
     </body>
 
     </html>
