@@ -192,6 +192,9 @@ header {
     -ms-grid-columns: 2fr;
         grid-template-columns: 2fr;
   }
+  #contact-me-section .contact-me-grid .social-desc {
+    padding: 10px;
+  }
 }
 
 #landing-section {

@@ -60,6 +60,10 @@
     #contact-me-section {
         .contact-me-grid {
             grid-template-columns: 2fr;
+
+            .social-desc {
+                padding: 10px;
+            }
         }
     }
 }
