@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #f4f4f4;
+  font-family: 'Laila', sans-serif;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -49,11 +54,64 @@ header {
   opacity: 1;
 }
 
+#landing-section h2 {
+  font-weight: bold;
+}
+
 #landing-section p {
   font-size: 18px;
   padding-top: 8px;
   font-weight: bold;
   opacity: 1;
+}
+
+#about-me-section .about-me-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  border: 1px solid #ccc;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+}
+
+#about-me-section h2 {
+  font-weight: bold;
+}
+
+#about-me-section .skill-image-sec img {
+  border-radius: 5px;
+}
+
+#about-me-section .skills-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+}
+
+#about-me-section .skills-grid ul {
+  margin-right: 30px;
+}
+
+#about-me-section .skills-grid li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #about-me-section {
+    margin: auto;
+    max-width: 90%;
+  }
+  #about-me-section .about-me-grid {
+    -ms-grid-columns: (4fr)[1];
+        grid-template-columns: repeat(1, 4fr);
+  }
+  #about-me-section img {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
