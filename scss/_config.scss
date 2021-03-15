@@ -1,6 +1,6 @@
 // Link to font family
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
 
 // How to declare these fonts
 // font-family: 'Akaya Telivigala', cursive;
@@ -14,38 +14,38 @@
 
 // General Styling
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
 body {
-    background-color: #f4f4f4;
-    font-family: 'Laila', sans-serif;
+  background-color: #f4f4f4;
+  font-family: "Laila", sans-serif;
 }
 
 // Navbar Styling
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .navbar .navbar-brand {
-    font-family: 'Akaya Telivigala', cursive;
-    
-    h2 {
-        font-size: 32px;
-        font-weight: bold;
-    }
+  font-family: "Akaya Telivigala", cursive;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
 }
 
 .nav-item a {
-    padding: 15px;
-    margin: 2px 10px;
-    font-family: 'Laila', sans-serif;
-    font-weight: bold;
+  padding: 15px;
+  margin: 2px 10px;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
 }

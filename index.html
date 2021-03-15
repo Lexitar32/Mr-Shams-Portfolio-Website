@@ -1,226 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="This is the version 2 of Arimoro Olamilekan portfolio website that was built with HTML, SCSS, CSS, Bootstrap, JavaScript, PHP and MySQL. This website shows a good explanation of me, what I do, my skills, experience, developer journey and many cool things about me...">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This is the version 2 of Arimoro Olamilekan portfolio website that was built with HTML, SCSS, CSS, Bootstrap, JavaScript, PHP and MySQL. This website shows a good explanation of me, what I do, my skills, experience, developer journey and many cool things about me..."
+    />
 
     <!-- Tab Name -->
     <title>Aderoju Shamsudeen Adedapo | Home</title>
 
     <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <!-- Link to Fontawesome Icons -->
-    <script src="https://kit.fontawesome.com/bc9f75cc29.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bc9f75cc29.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- My Personal Icon -->
     <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
 
     <!-- Link to my Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <header class="bg-light">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg container navbar-light">
-          <div class="container">
-            <a href="#" class="navbar-brand text-primary"><h2>A S A</h2></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse" id="navbarMenu">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a href="#about-me-section" class="nav-link text-primary">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#service-section" class="nav-link text-primary">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#blog-section" class="nav-link text-primary">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#event-section" class="nav-link text-primary">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact-me-section" class="nav-link text-primary">Contact Me</a>
-                </li>
-              </ul>
-      
-            </div>
-          </div>
-    
-        </nav>
-      </header>
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg container navbar-light">
+        <div class="container">
+          <a href="#" class="navbar-brand"><h2>A S A</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <!-- Landing Section -->
-      <div id="landing-section">
-          <div class="container">
-              <img src="./assets/images/shams.jpeg" alt="My Image">
-              <h2>Hello 👋</h2>
-              <h2>My Name is Shamsudeen</h2>
-              <p>I am a trainer, a speaker, an anchor and a non-profit professional.</p>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#about-me-section" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#service-section" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#event-section" class="nav-link">Events</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact-me-section" class="nav-link">Contact Me</a>
+              </li>
+            </ul>
           </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Landing Section -->
+    <div id="landing-section">
+      <div class="container">
+        <img src="./assets/images/shams.jpeg" alt="My Image" />
+        <h2>Hello 👋</h2>
+        <h2>My Name is Shamsudeen</h2>
+        <p>
+          I am a trainer, a speaker, an anchor and a non-profit professional.
+        </p>
       </div>
+    </div>
 
-      <!-- About Me and Skills Section -->
-      <div id="about-me-section">
-          <div class="about-me-grid container">
-              <div class="skill-image-sec">
-                  <img src="./assets/images/shams.jpeg" alt="About Me Image">
-              </div>
-              <div class="about-me-desc">
-                  <h2 class="text-primary">About me</h2>
-                  <p>
-                    Shamsudeen Adedapo Aderoju is a vibrant Nigerian Youth with a thorough background
-                     in sciences and vast experience in leadership and community development. 
-                     He is an alumnus of the prestigious British Council Leaders for Tomorrow Training 
-                     program and a fellow of the Young African Leaders Initiative (West African Regional 
-                     Leadership Centre). He currently works with TIIDELab Initiative as the Program Coordinator.
-                  </p>
-                  <p>Shamsudeen has a seven-year experience facilitating workshops and seminars on leadership, 
-                     community development, Nation and Community Development related topics. 
-                     He is a seasoned facilitator, speaker, anchor and program executor. 
-                     His life ambition is to raise future leaders from amongst the downtrodden. 
-                     He is an excellent communicator, a writer, a speaker and a team player. 
-                     He has a masters and Bachelor Degrees from the University of Ilorin and the 
-                     Usmanu Danfodiyo University Sokoto Respectively. He is an advocate of peace and a 
-                     staunch believer of the work-ability of the Nigerian project.
-                  </p>
+    <!-- About Me and Skills Section -->
+    <div id="about-me-section">
+      <div class="about-me-grid container">
+        <div class="skill-image-sec">
+          <img src="./assets/images/shams.jpeg" alt="About Me Image" />
+        </div>
+        <div class="about-me-desc">
+          <h2>About me</h2>
+          <p>
+            Shamsudeen Adedapo Aderoju is a vibrant Nigerian Youth with a
+            thorough background in sciences and vast experience in leadership
+            and community development. He is an alumnus of the prestigious
+            British Council Leaders for Tomorrow Training program and a fellow
+            of the Young African Leaders Initiative (West African Regional
+            Leadership Centre). He currently works with TIIDELab Initiative as
+            the Program Coordinator.
+          </p>
+          <p>
+            Shamsudeen has a seven-year experience facilitating workshops and
+            seminars on leadership, community development, Nation and Community
+            Development related topics. He is a seasoned facilitator, speaker,
+            anchor and program executor. His life ambition is to raise future
+            leaders from amongst the downtrodden. He is an excellent
+            communicator, a writer, a speaker and a team player. He has a
+            masters and Bachelor Degrees from the University of Ilorin and the
+            Usmanu Danfodiyo University Sokoto Respectively. He is an advocate
+            of peace and a staunch believer of the work-ability of the Nigerian
+            project.
+          </p>
 
-                  <h2 class="text-primary">Skills</h2>
-                  <div class="skills-grid">
-                    <ul>
-                        <li><i class="fas fa-check text-primary"></i> Public Speaking</li>
-                        <li><i class="fas fa-check text-primary"></i> Program Management</li>
-                        <li><i class="fas fa-check text-primary"></i> Organizational Leadership</li>
-                        <li><i class="fas fa-check text-primary"></i> Problem Solving</li>
-                        <li><i class="fas fa-check text-primary"></i> Training Facilitation</li>
-                    </ul>
-                    <ul>
-                        <li><i class="fas fa-check text-primary"></i> Communication Skills</li>
-                        <li><i class="fas fa-check text-primary"></i> Community Outreach</li>
-                        <li><i class="fas fa-check text-primary"></i> Team Building</li>
-                        <li><i class="fas fa-check text-primary"></i> Customer Service</li>
-                        <li><i class="fas fa-check text-primary"></i> Microsoft Word</li>
-                    </ul>
-                  </div>
-              </div>
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <ul>
+              <li><i class="fas fa-check"></i> Public Speaking</li>
+              <li><i class="fas fa-check"></i> Program Management</li>
+              <li><i class="fas fa-check"></i> Organizational Leadership</li>
+              <li><i class="fas fa-check"></i> Problem Solving</li>
+              <li><i class="fas fa-check"></i> Training Facilitation</li>
+            </ul>
+            <ul>
+              <li><i class="fas fa-check"></i> Communication Skills</li>
+              <li><i class="fas fa-check"></i> Community Outreach</li>
+              <li><i class="fas fa-check"></i> Team Building</li>
+              <li><i class="fas fa-check"></i> Customer Service</li>
+              <li><i class="fas fa-check"></i> Microsoft Word</li>
+            </ul>
           </div>
+        </div>
       </div>
+    </div>
 
-      <!-- Services Section -->
-      <div id="service-section">
-        <h2 class="text-primary text-center services">Services</h2>
-        <p class="text-center">These are the services I offer...</p>
-          <div class="container">
-            <div class="service-section-grid">
-                <div class="box">
-                    <h2>Training and Workshop Facilitator</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-                <div class="box">
-                    <h2>Program Management and Coordination</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-                <div class="box">
-                    <h2>Speech and Report Writing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-                <div class="box">
-                    <h2>Corperate Compere</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-                <div class="box">
-                    <h2>Community Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-                <div class="box">
-                    <h2>Speaker at Conferences</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque 
-                    autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
-                </div>
-            </div>
+    <!-- Services Section -->
+    <div id="service-section">
+      <h2 class="text-center services">Services</h2>
+      <p class="text-center">These are the services I offer...</p>
+      <div class="container">
+        <div class="service-section-grid">
+          <div class="box">
+            <h2>Training and Workshop Facilitator</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
           </div>
+          <div class="box">
+            <h2>Program Management and Coordination</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Speech and Report Writing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Corperate Compere</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Community Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Speaker at Conferences</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora
+              perferendis eum non provident.
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <!-- Contact Me Section -->
-            <div id="contact-me-section">
-                <div class="contact-me-grid container">
-                    <div class="form-section">
-                        <h2 class="text-primary">Contact Me</h2>
-                        <form>
-                            <div class="form-group">
-                              <label>Full Name</label>
-                              <input type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                            <div class="form-group">
-                              <label>Email Address</label>
-                              <input type="email" class="form-control" placeholder="Email Address">
-                            </div>
-                            <div class="form-group">
-                              <label>Subject</label>
-                              <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="form-group">
-                              <label>Message</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
-                    </div>
-                    <div class="social-desc">
-                        <h2 class="text-primary">Get In Touch</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. 
-                            Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?
-                        </p>
-      
-                        <ul>
-                            <li><i class="fas fa-map-marker-alt text-primary"></i> Address</li>
-                            <li><i class="fas fa-phone text-primary"></i> +23490505628</li>
-                            <li><i class="fas fa-envelope text-primary"></i> shamdex2000@gmail.com</li>
-                        </ul>
-
-                        <p>
-                            <span><a href="https://twitter.com/Shamdex2000" target="_blank"><i class="fab fa-twitter text-primary"></i></a></span>
-                            <span><a href="https://www.linkedin.com/in/aderoju-shamsudeen-adedapo-03288774/" target="_blank"><i class="fab fa-linkedin text-primary"></i></a></span>
-                            <span><a href="https://medium.com/@shamdex2000" target="_blank"><i class="fab fa-medium text-primary"></i></a></span>
-                            <span><a href="https://www.instagram.com/shamdex2000/?hl=en" target="_blank"><i class="fab fa-instagram text-primary"></i></a></span>
-                        </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Contact Me Section -->
+    <div id="contact-me-section">
+      <div class="contact-me-grid container">
+        <div class="form-section">
+          <h2>Contact Me</h2>
+          <form>
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Full Name" />
             </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" class="form-control" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="social-desc">
+          <h2>Get In Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
+            magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+            mollitia inventore?
+          </p>
 
-      <!-- Bootstrap JavaScript and Popper Js Script -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-      <script src="https://unpkg.com/scrollreveal"></script>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Address</li>
+            <li><i class="fas fa-phone"></i> +23490505628</li>
+            <li><i class="fas fa-envelope"></i> shamdex2000@gmail.com</li>
+          </ul>
 
-      <script>
-        window.sr = ScrollReveal({
-          duration: 2000
-        });
-        sr.reveal('#about-me-section');
-        sr.reveal('#service-section');
-        sr.reveal('#contact-me-section');
-      </script>
+          <p>
+            <span
+              ><a href="https://twitter.com/Shamdex2000" target="_blank"
+                ><i class="fab fa-twitter"></i></a
+            ></span>
+            <span
+              ><a
+                href="https://www.linkedin.com/in/aderoju-shamsudeen-adedapo-03288774/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i></a
+            ></span>
+            <span
+              ><a href="https://medium.com/@shamdex2000" target="_blank"
+                ><i class="fab fa-medium"></i></a
+            ></span>
+            <span
+              ><a
+                href="https://www.instagram.com/shamdex2000/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram"></i></a
+            ></span>
+          </p>
+        </div>
+      </div>
+    </div>
 
-    </body>
+    <!-- Bootstrap JavaScript and Popper Js Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
-    </html>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      window.sr = ScrollReveal({
+        duration: 2000,
+      });
+      sr.reveal("#about-me-section");
+      sr.reveal("#service-section");
+      sr.reveal("#contact-me-section");
+    </script>
+  </body>
+</html>
