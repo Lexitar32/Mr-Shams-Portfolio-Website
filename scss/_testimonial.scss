@@ -1,0 +1,73 @@
+.card {
+  box-shadow: 0px 4px 8px 0px #bdbdbd;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 4px 8px 0px #bdbdbd;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  background: 0 0;
+  color: #1e88e5;
+  border: none;
+  padding: 5px 20px;
+  font: inherit;
+  font-size: 50px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  color: #0d47a1;
+  background-color: transparent;
+}
+
+.owl-dots {
+  display: none;
+}
+
+button:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline-width: 0;
+}
+
+.item {
+  display: none;
+}
+
+.next {
+  display: block;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.prev {
+  display: block;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.item.show {
+  display: block;
+  transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 999px) {
+  .next,
+  .prev {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .item {
+    display: block;
+  }
+}

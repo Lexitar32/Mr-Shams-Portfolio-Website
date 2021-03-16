@@ -32,8 +32,9 @@ body {
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 99;
 }
+
 .navbar .navbar-brand {
   font-family: "Akaya Telivigala", cursive;
 
