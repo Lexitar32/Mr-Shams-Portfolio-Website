@@ -1,10 +1,12 @@
+/* Link to font family */
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
+
+/* General Styling */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,21 +15,21 @@ html {
 
 body {
   background-color: #f4f4f4;
-  font-family: 'Laila', sans-serif;
+  font-family: "Laila", sans-serif;
 }
 
+/* Navbar Styling */
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 99;
 }
 
 .navbar .navbar-brand {
-  font-family: 'Akaya Telivigala', cursive;
+  font-family: "Akaya Telivigala", cursive;
 }
 
-.navbar .navbar-brand h2 {
+.navbar-brand h2 {
   font-size: 32px;
   font-weight: bold;
 }
@@ -35,179 +37,18 @@ header {
 .nav-item a {
   padding: 15px;
   margin: 2px 10px;
-  font-family: 'Laila', sans-serif;
+  font-family: "Laila", sans-serif;
   font-weight: bold;
 }
 
-#about-me-section .about-me-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-  margin: 30px auto;
-  padding: 30px;
-  background: #fff;
-}
-
-#about-me-section h2 {
-  font-weight: bold;
-}
-
-#about-me-section .skill-image-sec img {
-  border-radius: 5px;
-  padding: 40px;
-}
-
-#about-me-section .skills-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-}
-
-#about-me-section .skills-grid ul {
-  margin-right: 30px;
-}
-
-#about-me-section .skills-grid li {
-  list-style-type: none;
-  padding-bottom: 10px;
-}
-
-#service-section .services {
-  font-weight: bold;
-}
-
-#service-section .service-section-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (2fr)[3];
-      grid-template-columns: repeat(3, 2fr);
-  grid-gap: 15px;
-}
-
-#service-section .service-section-grid .box {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-  padding: 30px;
-  margin: 7px;
-  text-align: center;
-}
-
-#service-section .service-section-grid .box h2 {
-  font-size: 19px;
-  font-weight: bold;
-  color: #007bff !important;
-}
-
-#contact-me-section .contact-me-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
-  grid-gap: 30px;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
-  margin: 30px auto;
-  max-width: 90%;
-  padding: 30px;
-  background: #fff;
-}
-
-#contact-me-section .contact-me-grid .form-section {
-  padding: 15px;
-}
-
-#contact-me-section .contact-me-grid .social-desc {
-  padding: 25px;
-}
-
-#contact-me-section .contact-me-grid .social-desc ul li {
-  list-style-type: none;
-  padding-bottom: 10px;
-}
-
-#contact-me-section .contact-me-grid .social-desc span {
-  padding-right: 20px;
-  font-size: 25px;
-}
-
-#contact-me-section h2 {
-  font-weight: bold;
-}
-
-@media (max-width: 425px) {
-  #landing-section h2 {
-    font-size: 22px;
-    font-weight: bold;
-    padding-top: 7px;
-  }
-  #landing-section p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  #about-me-section {
-    margin: auto;
-    max-width: 90%;
-  }
-  #about-me-section .about-me-grid {
-    -ms-grid-columns: 4fr;
-        grid-template-columns: 4fr;
-  }
-  #about-me-section img {
-    display: none;
-  }
-}
-
-@media (max-width: 320px) {
-  #about-me-section {
-    margin: auto;
-    max-width: 100%;
-    padding-left: 0px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  #service-section .service-section-grid {
-    -ms-grid-columns: (2fr)[2];
-        grid-template-columns: repeat(2, 2fr);
-  }
-}
-
-@media (max-width: 768px) {
-  #service-section .service-section-grid {
-    -ms-grid-columns: 2fr;
-        grid-template-columns: 2fr;
-  }
-}
-
-@media (max-width: 768px) {
-  #contact-me-section .contact-me-grid {
-    -ms-grid-columns: 2fr;
-        grid-template-columns: 2fr;
-  }
-  #contact-me-section .contact-me-grid .social-desc {
-    padding: 10px;
-  }
-}
-
+/* Landing Section Styling */
 #landing-section {
   padding: 120px 0;
   text-align: center;
   background: url(../images/shams1.jpg) no-repeat center center/cover;
   opacity: 0.9;
   color: black;
-  font-family: 'Laila', sans-serif;
+  font-family: "Laila", sans-serif;
   background-attachment: fixed;
   background-position: center;
   height: 100%;
@@ -229,4 +70,273 @@ header {
   font-weight: bold;
   opacity: 1;
 }
-/*# sourceMappingURL=style.css.map */
+
+/* About Me and Skills Section */
+#about-me-section .about-me-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+}
+
+.about-me-grid h2 {
+  font-weight: bold;
+}
+
+.about-me-grid .skill-image-sec img {
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.skills-grid ul {
+  margin-right: 30px;
+}
+
+.skills-grid li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+/* Services Section */
+#service-section .services {
+  font-weight: bold;
+}
+
+.service-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 15px;
+}
+
+.service-section-grid .box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin: 7px;
+  text-align: center;
+}
+
+.service-section-grid h2 {
+  font-size: 19px;
+  font-weight: bold;
+  color: black !important;
+}
+
+/* Projects Section */
+.projects-section {
+  margin: 40px auto;
+}
+
+.projects-section-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 10px;
+}
+
+.projects-section-grid img {
+  max-height: 300px;
+}
+
+/* Testimonial Section */
+body {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0px #bdbdbd;
+}
+
+.profile-pic {
+  width: 100px !important;
+  height: 100px;
+  box-shadow: 0px 4px 8px 0px #bdbdbd;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  background: 0 0;
+  color: #1e88e5 !important;
+  border: none;
+  /* padding: 5px 10px !important; */
+  font: inherit;
+  font-size: 50px !important;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  color: #0d47a1 !important;
+  /* background-color: transparent !important; */
+}
+
+.owl-dots {
+  display: none;
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0;
+}
+
+/* .item {
+  display: none;
+} */
+
+.next {
+  display: block !important;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+}
+
+.prev {
+  display: block !important;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+}
+
+.item.show {
+  display: block;
+  transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 999px) {
+  .next,
+  .prev {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .item {
+    display: block !important;
+  }
+}
+
+/* Contact Me and Skills Section */
+#contact-me-section .contact-me-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+  margin: 30px auto;
+  max-width: 90%;
+  padding: 30px;
+  background: #fff;
+}
+.contact-me-grid .form-section {
+  padding: 15px;
+}
+
+.contact-me-grid .social-desc {
+  padding: 25px;
+}
+
+.contact-me-grid .social-desc ul li {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.social-desc span {
+  padding-right: 20px;
+  font-size: 25px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 425px) {
+  #landing-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 7px;
+  }
+
+  #landing-section p {
+    font-size: 15px;
+  }
+}
+
+/* Responsiveness For About Me Section */
+@media (max-width: 768px) {
+  #about-me-section {
+    margin: auto;
+    max-width: 90%;
+  }
+  #about-me-section .about-me-grid {
+    grid-template-columns: 4fr;
+  }
+
+  #about-me-section img {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  #about-me-section {
+    margin: auto;
+    max-width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  #about-me-section .about-me-grid {
+    grid-template-columns: 2fr;
+  }
+}
+
+/* Responsiveness For Services Section */
+@media (max-width: 768px) {
+  #service-section .service-section-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #service-section .service-section-grid {
+    grid-template-columns: 2fr;
+  }
+}
+
+/* Project Section Responsiveness */
+@media (max-width: 768px) {
+  .projects-section-grid {
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .projects-section-grid {
+    grid-template-columns: 2fr;
+    grid-gap: 15px;
+  }
+}
+
+/* Responsiveness for Contact Me Section */
+@media (max-width: 768px) {
+  #contact-me-section .contact-me-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .contact-me-grid .social-desc {
+    padding: 10px;
+  }
+}
