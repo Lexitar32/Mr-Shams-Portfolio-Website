@@ -129,7 +129,6 @@ header {
 .service-section-grid h2 {
   font-size: 19px;
   font-weight: bold;
-  color: black !important;
 }
 
 /* Projects Section */
@@ -140,7 +139,7 @@ header {
 .projects-section-grid {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
 .projects-section-grid img {
@@ -170,7 +169,7 @@ body {
   background: 0 0;
   color: #1e88e5 !important;
   border: none;
-  /* padding: 5px 10px !important; */
+  padding: 5px 20px !important;
   font: inherit;
   font-size: 50px !important;
 }
@@ -178,7 +177,7 @@ body {
 .owl-carousel .owl-nav button.owl-next:hover,
 .owl-carousel .owl-nav button.owl-prev:hover {
   color: #0d47a1 !important;
-  /* background-color: transparent !important; */
+  background-color: transparent !important;
 }
 
 .owl-dots {
@@ -192,15 +191,16 @@ button:focus {
   outline-width: 0;
 }
 
-/* .item {
+.item {
   display: none;
-} */
+}
 
 .next {
   display: block !important;
   position: relative;
   transform: scale(0.8);
   transition-duration: 0.3s;
+  opacity: 0.6;
 }
 
 .prev {
@@ -208,6 +208,7 @@ button:focus {
   position: relative;
   transform: scale(0.8);
   transition-duration: 0.3s;
+  opacity: 0.6;
 }
 
 .item.show {
