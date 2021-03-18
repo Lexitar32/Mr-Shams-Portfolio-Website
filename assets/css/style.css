@@ -228,6 +228,22 @@ button:focus {
   }
 }
 
+/* Gallery Section Pictures */
+.gallery-section {
+  margin: 50px auto;
+}
+
+.gallery-section h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-section-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
 /* Contact Me and Skills Section */
 #contact-me-section .contact-me-grid {
   display: grid;
