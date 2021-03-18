@@ -71,6 +71,13 @@ header {
   opacity: 1;
 }
 
+#landing-section a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+}
+
 /* About Me and Skills Section */
 #about-me-section .about-me-grid {
   display: grid;
@@ -242,6 +249,10 @@ button:focus {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-gap: 30px;
+}
+
+.gallery-section-grid img {
+  max-height: 300px;
 }
 
 /* Contact Me and Skills Section */
