@@ -357,3 +357,17 @@ h2 {
     padding: 10px;
   }
 }
+
+/* Responsiveness of Gallery section */
+@media (max-width: 768px) {
+  .gallery-section-grid {
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .gallery-section-grid {
+    grid-template-columns: 2fr;
+  }
+}
