@@ -68,7 +68,10 @@
                 <a href="#service-section" class="nav-link">Services</a>
               </li>
               <li class="nav-item">
-                <a href="#event-section" class="nav-link">Events</a>
+                <a href="#awards-section" class="nav-link">Awards</a>
+              </li>
+              <li class="nav-item">
+                <a href="#gallery-section" class="nav-link">Projects</a>
               </li>
               <li class="nav-item">
                 <a href="#contact-me-section" class="nav-link">Contact Me</a>
@@ -205,8 +208,8 @@
       </div>
     </div>
 
-    <!-- Projects Section -->
-    <div class="projects-section container">
+    <!-- Awards Section -->
+    <div class="projects-section container" id="awards-section">
       <h2 class="text-center pb-3">Awards and Commendations</h2>
       <div class="projects-section-grid">
         <div class="card">
@@ -315,7 +318,10 @@
     </div>
 
     <!-- Testimonial Section -->
-    <div class="container-fluid px-3 px-sm-5 my-5 text-center">
+    <div
+      class="container-fluid px-3 px-sm-5 my-5 text-center"
+      id="testimonial-section"
+    >
       <h4 class="mb-5 font-weight-bold">What People Say About me...</h4>
       <div class="owl-carousel owl-theme">
         <div class="item first prev">
@@ -414,7 +420,7 @@
 
     <!-- Pictures Section -->
     <h2 class="text-center font-weight-bold">What I have done...</h2>
-    <div class="gallery-section container">
+    <div class="gallery-section container" id="gallery-section">
       <h5 class="mb-5 font-weight-bold text-center">
         Community Development Service
       </h5>
@@ -559,7 +565,7 @@
       <div class="contact-me-grid container">
         <div class="form-section">
           <h2>Contact Me</h2>
-          <form>
+          <form name="name" action="POST" data-netlify="true">
             <div class="form-group">
               <label>Full Name</label>
               <input type="text" class="form-control" placeholder="Full Name" />
@@ -651,88 +657,18 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script src="./assets/main.js"></script>
+
     <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          mouseDrag: false,
-          loop: true,
-          margin: 2,
-          nav: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 3,
-            },
-          },
-        });
-
-        $(".owl-prev").click(function () {
-          $active = $(".owl-item .item.show");
-          $(".owl-item .item.show").removeClass("show");
-          $(".owl-item .item").removeClass("next");
-          $(".owl-item .item").removeClass("prev");
-          $active.addClass("next");
-          if ($active.is(".first")) {
-            $(".owl-item .last").addClass("show");
-            $(".first").addClass("next");
-            $(".owl-item .last")
-              .parent()
-              .prev()
-              .children(".item")
-              .addClass("prev");
-          } else {
-            $active.parent().prev().children(".item").addClass("show");
-            if ($active.parent().prev().children(".item").is(".first")) {
-              $(".owl-item .last").addClass("prev");
-            } else {
-              $(".owl-item .show")
-                .parent()
-                .prev()
-                .children(".item")
-                .addClass("prev");
-            }
-          }
-        });
-
-        $(".owl-next").click(function () {
-          $active = $(".owl-item .item.show");
-          $(".owl-item .item.show").removeClass("show");
-          $(".owl-item .item").removeClass("next");
-          $(".owl-item .item").removeClass("prev");
-          $active.addClass("prev");
-          if ($active.is(".last")) {
-            $(".owl-item .first").addClass("show");
-            $(".owl-item .first")
-              .parent()
-              .next()
-              .children(".item")
-              .addClass("prev");
-          } else {
-            $active.parent().next().children(".item").addClass("show");
-            if ($active.parent().next().children(".item").is(".last")) {
-              $(".owl-item .first").addClass("next");
-            } else {
-              $(".owl-item .show")
-                .parent()
-                .next()
-                .children(".item")
-                .addClass("next");
-            }
-          }
-        });
+      window.sr = ScrollReveal({
+        duration: 2000,
       });
-
-      // window.sr = ScrollReveal({
-      //   duration: 2000,
-      // });
-      // sr.reveal("#about-me-section");
-      // sr.reveal("#service-section");
-      // sr.reveal("#contact-me-section");
+      sr.reveal("#about-me-section");
+      sr.reveal("#service-section");
+      sr.reveal("#awards-section");
+      sr.reveal("#testimonial-section");
+      sr.reveal("#gallery-section");
+      sr.reveal("#contact-me-section");
     </script>
   </body>
 </html>
